@@ -1,0 +1,608 @@
+@import url(./reset.css);
+
+/*폰트 영문*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*폰트 한국어*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+body {position:relative; color:#333; font-size: 12px;font-family: 'IBM Plex Sans KR', sans-serif;}
+a {color:#1e00e4; text-decoration: none;}
+
+/*Mobile*/
+@media screen and (max-width: 768px){
+
+}/*Mobile 종료*/
+
+/*Tablet*/
+@media screen and (min-width: 769px) and (max-width:1024px){
+/*메인 서클시작*/
+/* #circle_wrap{
+    z-index:9; 
+    position:fixed; 
+    top:0; left:0; right:0;
+    width: 100%; height:100%; 
+    background:#F9F6F1;} */
+    #circle_wrap{
+        z-index:9; 
+        position:fixed; 
+        top:0; left:0; 
+        width: 100%; height:100%; 
+        background:#F9F6F1;}   
+        
+        #circle_wrap>div{width: 100%;} 
+        .circle1 > img{position: absolute; z-index: 1; width: 280px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;} 
+        .circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 1s ease-out;} 
+        .circle1.end > img{top:80%;} 
+        
+        .circle2 > img{position: absolute; z-index: 1; width:430px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+        .circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle2.end > img{top:75%; } 
+        
+        .circle3 > img{position: absolute;  z-index: 1; width:300px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+        .circle3.on > img{transform:scale(1); top:60%; left:20%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle3.end > img{top:75%; } 
+        
+        .circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0); top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+        .circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1s ease-out;}
+        .circle4.end > img{top:70%; } 
+        
+        .circle5 > img{position: absolute;  z-index: 1;  width:350px; transform:scale(0); top:0%; right:0%; transform:scale(0); transition: top left 1s ease-out;}
+        .circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle5.end > img{top:70%; } 
+        
+        .circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0); top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+        .circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle6.end > img{top:40%; } 
+        
+        .circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0); bottom:0%; right:0%; transform:scale(0); transition: top left 1s ease-out;}
+        .circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle7.end > img{top:50%; } 
+        /* .circle1 > img{position: absolute; z-index: 1; width: 280px; top:40%; left:50%; transform:scale(0) ; translate:(100px,100px);} 
+        .circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 1s ease-out;} 
+        .circle1.end > img{top:80%;} 
+        
+        .circle2 > img{position: absolute; z-index: 1;  top:20%; left:30%; width:430px;  transform:scale(0);}
+        .circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle2.end > img{top:75%; } 
+        
+        .circle3 > img{position: absolute;  z-index: 1; top:60%; left:20%; width:300px; transform:scale(0);}
+        .circle3.on > img{transform:scale(1); top:60%; left:20%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle3.end > img{top:75%; } 
+        
+        .circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0);}
+        .circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1s ease-out;}
+        .circle4.end > img{top:70%; } 
+        
+        .circle5 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0);}
+        .circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle5.end > img{top:70%; } 
+        
+        .circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0);}
+        .circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle6.end > img{top:40%; } 
+        
+        .circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0);}
+        .circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
+        .circle7.end > img{top:50%; }  */
+        /*content0 .main_title*/
+        
+        /*main_title*/
+        .main_title{position: absolute;  z-index: 1; top:10%; left:10%; 
+            width:100%; opacity: 0;  transition:opacity 1s ease-out;}
+        .main_title.on {opacity: 1;} 
+        .main_title_inner{
+            width: 80%; height: 80vh;  
+            background: radial-gradient(97.19% 175.43% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
+        .main_title_inner>h1{padding:15%; font-size:150px; color:#066FFD; font-weight: 700; text-align: center; line-height: 180px;}
+        
+        
+        /*본문 레이아웃 시작*/
+        /*container*/
+        /* #circle_wrap의 높이와 동일한 값으로 설정 */
+        #container{position:relative; z-index: 10;  left:0; width: 100%;  height:100%; background: #4ea4d6;}
+        /*vh 화면 전체크기  js 지정 */
+        #container > div{width:100%; overflow: hidden;}
+        
+        /*건들지 말것! 작업 끝난후 dev height 추가예정*/
+        #container > div > section{position:absolute; z-index:10; width:100%; height:100%; overflow: hidden;  }
+        
+        #container > div > section.on{}
+        
+        /*content00 공백*/
+        #container > div > section{}
+        
+        /*content01 main*/
+        #container > div > section.main{position: relative; z-index: 10;}
+        
+        /*content2 introduce*/
+        #container > div > section.introduce{}
+        
+        /*content03 design*/
+        #container > div > section.design{ }
+        
+        /*content04 wep&app 총3개 풀무원,더본,카카오골프*/
+        #container > div > section.web_app{}
+        
+        /*content05 contact me*/
+        #container > div > section.footer{ }
+        
+        /*본문시작*/
+        
+        /*content1 section.main*/
+        /*메인화면*/
+        
+        section.main{position: relative; z-index: 10;}
+        
+        /*전역 메뉴바 gnb_btn 누르면 gnb가 on됨*/
+        div.gnb{}
+        div.gnb>h2{position: fixed; z-index: 100; top:0%; left:5%; font-size: 100px; color:#eb9dbf;
+            display:block;  width:20%;  margin:30px auto; color:#066FFD; font-weight: 600; font-size:40px; text-align:center; line-height: 1.1;}
+        /*gnb z-index:100;*/
+        /*메뉴바 버튼 누르면 ul이 보이며 버튼 모양이 바뀜*/
+        div.gnb>div.gnb_btn{position:fixed; z-index:150; top:5%; right: 10%; width:60px; height:60px; 
+            background:url(../img/gnb_on.png) no-repeat 0 0; background-size:cover;}
+        div.gnb.on>div.gnb_btn{background:url(../img/gnb_off.png) no-repeat 0 0; background-size:cover ;}    
+        div.gnb_open{display: none;  position: fixed; z-index: 100; top:0; left:0; bottom:0; right:0;  width: 80%; height: 80%;  padding:10%; 
+            background: radial-gradient(135.95% 136.40% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px); }
+        div.gnb.on>div.gnb_open{display: block;}
+        /*제목*/
+        div.gnb.on>div.gnb_open>h2>a{float:left; margin-left:10%; margin-right:30%; color:#066FFD; font-weight: 700;  font-size:50px; text-align: center;}
+        /*메뉴바 열린후의 모습*/
+        div.gnb>div.gnb_open>ul{float: left; margin-top:150px; width:30%;}
+        div.gnb>div.gnb_open>ul>li{}
+        div.gnb>div.gnb_open>ul>li>a{color: #066FFD;  font-weight:600; font-size:40px; line-height:80px;}
+        div.gnb>div.gnb_open>ul>li>a:hover{text-decoration: underline wavy 4px;}
+        
+        #content1>section.main>h2{ transform: translateY(800%);  transition: transform all 1s ease 0.5s;
+            color:#066FFD; font-size:80px; font-weight: 700; text-align: center;}  
+        #content1.on>section.main>h2{transform: translateY(10%); transition: transform all 1s ease 0.5s;}  
+        
+        /*content2 introduce*/
+        #content{position: relative; z-index: 10;}
+        
+        section.introduce{position:absolute; z-index: 10;}
+        
+        section.introduce>h2{margin:120px auto; color:#066FFD; font-size:36px; font-weight: 500; text-align: center; }
+        
+        /*큰 유리박스*/
+        section.introduce>div.introduce_inner{
+            width: 80%;
+            margin:0 auto;
+            border-radius: 93px 93px;
+            background: radial-gradient(135.95% 136.40% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(35px);}
+            
+        div.introduce_inner>ul{display: block; padding: 40px 100px 100px;}
+        
+        /*li 총 5개*/
+        div.introduce_inner>ul>li{margin-top:50px;}
+        div.introduce_inner>ul>li>ul>li{margin-top:20px;}
+        
+        div.introduce_inner>ul>li>ul>li:first-child{ text-align: left; color: #333; font-size: 36px;font-weight: 600;}
+        div.introduce_inner>ul>li>ul>li{text-align: left; font-size: 20px; font-weight: 500;}
+        
+        /*.name*/
+        div.introduce_inner>ul>li.name{}
+        /*.license*/
+        div.introduce_inner>ul>li.license{}
+        
+        
+        /*.license & .education공통*/
+        section.introduce>div.introduce_inner>ul>li>ul>li>ul{display: flex; justify-content:space-between;}
+        section.introduce>div.introduce_inner>ul>li>ul>li>ul>li:first-of-type{flex:2;}
+        section.introduce>div.introduce_inner>ul>li>ul>li>ul>li:nth-of-type(2){margin-right:5%; font-size:18; font-weight: 500;}
+        section.introduce>div.introduce_inner>ul>li>ul>li>ul>li:last-of-type{font-size:16; font-weight: 400;}
+        
+        /*.education*/
+        section.introduce>div.introduce_inner>ul>li>ul.education{}
+        
+        /*.coding_skills*//*.design_skills*/
+        div.introduce_inner>ul>li>ul.coding_skills{}
+        div.introduce_inner>ul>li>ul.design_skills{}
+        div.introduce_inner>ul>li.coding_skills>ul>li,
+        div.introduce_inner>ul>li.design_skills>ul>li
+        {text-align: center;}
+        div.introduce_inner>ul>li.coding_skills>ul>li>ul,
+        div.introduce_inner>ul>li.design_skills>ul>li>ul
+        {margin-top:50px; display: flex; align-items: center; justify-content:space-between;}
+        div.introduce_inner>ul>li.coding_skills>ul>li>ul>li:first-of-type,
+        div.introduce_inner>ul>li.design_skills>ul>li>ul>li:first-of-type
+        { flex:0.5; text-align: right;}
+        div.introduce_inner>ul>li.coding_skills>ul>li>ul>li:nth-of-type(2),
+        div.introduce_inner>ul>li.design_skills>ul>li>ul>li:nth-of-type(2)
+        {margin-right:0; flex:0.5; text-align: center; }
+        div.introduce_inner>ul>li.coding_skills>ul>li>ul>li:last-of-type,
+        div.introduce_inner>ul>li.design_skills>ul>li>ul>li:last-of-type
+        { flex:0.5; text-align: left; }
+        
+        
+        
+        /*content2 design*/
+        #container > div > section.design{position:relative; }
+        #container > div > section.design >div.design_inner{position:relative; width: 100%; height: 100%;}
+        
+        .bg{ position:absolute;  z-index:18;  width: 100%; height: 100%;  
+            background: radial-gradient(97.19% 175.43% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
+        
+        #container > div > section.design >div.design_inner>.design_btn{position:absolute; z-index:30;  top:820px; left:42%; 
+            font-size: 30px; color:#fff;}
+        .design_btn_next{float: left; width:60px; height: 60px; 
+            background: url(../img/next.png) no-repeat 0 0 ; text-indent: -9999px; overflow: hidden; background-size:cover ;}
+        .design_btn_info{float: left; box-sizing: border-box; width: 180px; height:60px;
+            margin: 0 20px;
+            color: #066FFD; text-align: center; line-height: 50px; 
+            border:4px solid #066FFD; border-radius: 50px;}
+        .design_btn_prev{float: left; width:60px; height: 60px; 
+            background: url(../img/prev.png) no-repeat 0 0 ; text-indent: -9999px; overflow: hidden;background-size:cover ;}
+        
+        /*기본으로 들어가는 맨앞 메인의 */
+        #container>div>section.design > div > div.design_page{position: absolute; z-index:20; display: block; 
+            width: 1500px; height:700px;  top:10%; left:10%;}
+        
+        #container>div>section.design > div > div.design_page.pn1 {position: absolute; z-index:20; display: block; 
+            width: 1500px; height:700px; }
+        
+        #container>div>section.design > div > div.design_page.pn2 {position: absolute; z-index:15; display: block; 
+            left:15%; top:15%; width: 1500px; height:560px; }
+            
+        #container>div>section.design > div > div.design_page.pn3 {position: absolute; z-index:10; display: block;
+            left:20%; top:20%; width: 1500px; height:420px;}
+        
+        #container>div>section.design > div > div.design_page.pn0 {display: none; }
+        
+        #container>div>section.design > div > div.design_page:nth-of-type(1){color: #e6eb9d;}
+        #container>div>section.design > div > div.design_page:nth-of-type(2){color: #a4eb9d;}
+        #container>div>section.design > div > div.design_page:nth-of-type(3){color: #9db8eb;}
+        #container>div>section.design > div > div.design_page:nth-of-type(4){color: #e99deb;}
+        #container>div>section.design > div > div.design_page:nth-of-type(5){color: #6199da;}
+        #container>div>section.design > div > div.design_page:nth-of-type(6){color: #db856f;}
+        #container>div>section.design > div > div.design_page:nth-of-type(7){color: #4ea4d6;}
+        #container>div>section.design > div > div.design_page:nth-of-type(8){color: #3d0597;}
+        
+        div.design_inner > div > div.design_page_inner { float: left; padding: 5%; width:40%; height:79%;  background: #F9F6F1;}
+        div.design_inner > div > div.design_page_inner > h2{margin-bottom: 30px; color:#066FFD; font-size:80px; font-weight: 500; text-align: left;}
+        div.design_inner > div > div.design_page_inner > ul > li{margin-bottom: 10px; font-size:24px; font-weight: 400; text-align: left;}
+        div.design_inner > div > div.design_page_inner > ul > li:last-child{margin-top:30px; font-size:24px; font-weight: 400; text-align: left;}
+        div.design_inner > div > div.design_page_inner > ul >li>strong{ font-weight: 600;}
+        
+        div.design_inner > div >img{float: left;  width:50%;   height: 100%; }
+        
+        /*메인페이지*/
+        #container > div > section.design > .design_page00>h2{}
+        
+        /*content2 web_app*/
+        
+        /*content04 wep&app 총3개 풀무원,더본,카카오골프*/
+        #container > div > section.web_app{height: 1200px;}
+        section.web_app{}
+        section.web_app > h2{margin:20px auto; color:#066FFD; font-size:80px; font-weight: 500; text-align: center;}
+        section.web_app > div{display: flex; flex-wrap:wrap; height:700px; margin-top: 100px;
+            background:radial-gradient(131.51% 150.36% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
+        
+        section.web_app > div > .mock_up{width:50%; height: 500px;  padding-top:50px; text-align: center; line-height:600px;}
+        section.web_app > div > .mock_up>img{ width:50%;  }
+        
+        /*버튼 상세*/
+        .web_app_btn{}
+        .web_app_btn > .web_app_btn_inner{}
+        .web_app_btn > .web_app_btn_inner >div{float: left; position: absolute; z-index: 30; top:600px;
+            width:164px; height:48px; padding: 11px 26px 12px 26px;
+            box-sizing: border-box; color: #066FFD; font-size: 16px; font-weight: 500; line-height: 24px; 
+            border-radius: 24px; border: #066FFD solid 3px;}
+        
+        
+        .web_app_btn > .web_app_btn_inner >div >a{color: #066FFD; font-size: 16px; font-weight: 500; line-height: 24px; }
+        
+        .web_app_btn_01{top:700px; left:40%; margin-right:20px;}
+        .web_app_btn_02{top:700px; left:50%;}
+        
+        /*웹 접근성 유효성창*/
+        .web_app_btn_02_open{display: none; position: relative; top:-600px; left:30%;
+            width: 1200px; height: 800px;  background: #F9F6F1;
+            color: #333;text-align: center;
+            border:0; border-radius: 0; }
+        .web_app_btn_02_open.on{display: block;}
+        
+        ul.web_app_btn_02_open>li{color: #333;text-align: center; font-size: 36px; font-weight: 500;}
+        ul.web_app_btn_02_open>li:first-of-type{ width: 100%; height:200px; font-size: 64px; font-weight: 500;line-height: 200px; }
+        ul.web_app_btn_02_open>li:nth-of-type(2){ float: left; width: 50%; line-height: 80px;}
+        ul.web_app_btn_02_open>li:nth-of-type(3){ float: left; width: 50%; line-height: 80px;}
+        ul.web_app_btn_02_open>li:nth-of-type(4){ float: left; width: 50%; line-height: 80px;}
+}/*Tablet 종료*/
+
+/*PC*/
+@media screen and (min-width: 1025px){
+
+/*메인 서클시작*/
+#circle_wrap{
+z-index:9; 
+position:fixed; 
+top:0; left:0; 
+width: 100%; height:100%; 
+background:#F9F6F1;}   
+
+/* #circle_wrap>div{width: 100%;} 
+.circle1 > img{position: absolute; z-index: 1; width: 280px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;} 
+.circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 1s ease-out;} 
+.circle1.end > img{top:80%;} 
+
+.circle2 > img{position: absolute; z-index: 1; width:430px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+.circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle2.end > img{top:75%; } 
+
+.circle3 > img{position: absolute;  z-index: 1; width:300px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+.circle3.on > img{transform:scale(1); top:60%; left:20%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle3.end > img{top:75%; } 
+
+.circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0); top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+.circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1s ease-out;}
+.circle4.end > img{top:70%; } 
+
+.circle5 > img{position: absolute;  z-index: 1;  width:350px; transform:scale(0); top:0%; right:0%; transform:scale(0); transition: top left 1s ease-out;}
+.circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle5.end > img{top:70%; } 
+
+.circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0); top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
+.circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle6.end > img{top:40%; } 
+
+.circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0); bottom:0%; right:0%; transform:scale(0); transition: top left 1s ease-out;}
+.circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle7.end > img{top:50%; }  */
+
+/*.circle1*/
+.circle1 > img{position: absolute; z-index: 1; width: 280px; top:40%; left:50%; transform:scale(0.1) ;} 
+.circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 1s ease-out;} 
+.circle1.end > img{top:80%;} 
+/*.circle2*/
+.circle2 > img{position: absolute; z-index: 1;  top:20%; left:30%; width:430px;  transform:scale(0.1);}
+.circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle2.end > img{top:75%; } 
+/*.circle3*/
+.circle3 > img{position: absolute;  z-index: 1; top:60%; left:20%; width:300px; transform:scale(0.1);}
+.circle3.on > img{transform:scale(1); top:60%; left:20%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle3.end > img{top:75%; } 
+/*.circle4*/
+.circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0.1);}
+.circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1s ease-out;}
+.circle4.end > img{top:70%; } 
+/*.circle5*/
+.circle5 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0.1);}
+.circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle5.end > img{top:70%; } 
+/*.circle6*/
+.circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0.1);}
+.circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle6.end > img{top:40%; } 
+/*.circle7*/
+.circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0.1);}
+.circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle7.end > img{top:50%; }  
+
+/*main_title*/
+.main_title{position: absolute;  z-index: 1; top:10%; left:10%; 
+    width:100%; opacity: 0;  transition:opacity 1s ease-out;}
+.main_title.on {opacity: 1;} 
+.main_title_inner{
+    width: 80%; height: 80vh;  
+    background: radial-gradient(97.19% 175.43% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
+.main_title_inner>h1{padding:15%; font-size:150px; color:#066FFD; font-weight: 700; text-align: center; line-height: 180px;}
+
+
+
+/*본문 레이아웃 시작*/
+/*container*/
+/* #circle_wrap의 높이와 동일한 값으로 설정 */
+#container{position:relative; z-index: 10;  left:0; 
+    width: 100%;  height:100%; }
+/*vh 화면 전체크기  js 지정 */
+#container > div{width:100%; overflow: hidden;}
+
+/*건들지 말것! 작업 끝난후 dev height 추가예정*/
+#container > div > section{position:absolute; z-index:10; width:100%; height:100%; overflow: hidden;  }
+
+#container > div > section.on{}
+
+/*content00 공백*/
+#container > div > section{}
+        
+
+/*content01 main*/
+section.main{position: relative; z-index: 10;}
+
+/*content2 introduce*/
+#container > div > section.introduce{}
+
+/*content03 design*/
+#container > div > section.design{ }
+
+/*content04 wep&app 총3개 풀무원,더본,카카오골프*/
+#container > div > section.web_app{}
+
+/*content05 contact me*/
+#container > div > section.footer{ }
+
+/*본문시작*/
+
+/*content1 section.main*/
+/*메인화면*/
+
+section.main{position: relative; z-index: 10;}
+
+
+/*전역 메뉴바 gnb_btn 누르면 gnb가 on됨*/
+div.gnb{}
+div.gnb>h2{position: fixed; display:block; z-index: 100; top:0%; left:5%; width:20%;  font-size: 100px; margin:30px auto; 
+    color:#066FFD; font-weight: 700; font-size:60px; text-align:center; line-height: 1.1;}
+div.gnb>div.gnb_btn{position:fixed; z-index:150; top:5%; right: 10%; width:60px; height:60px; 
+    background:url(../img/gnb_on.png) no-repeat 0 0; background-size:cover;}
+div.gnb.on>div.gnb_btn{background:url(../img/gnb_off.png) no-repeat 0 0; background-size:cover;}
+div.gnb_open{display: none; position: fixed; z-index: 100; top:0; left:0; bottom:0; right:0;  width: 90%; height: 90%;  padding:5%; 
+    background: radial-gradient(135.95% 136.40% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px); }
+div.gnb.on>div.gnb_open{display: block;}
+
+/*오픈후 메뉴*/
+/*제목*/
+div.gnb.on>div.gnb_open>h2>a{float:left; margin-left:10%; margin-right:30%; color:#066FFD; 
+    font-weight: 700;  font-size:70px; text-align: center;}
+/*메뉴바 열린후의 모습*/
+div.gnb>div.gnb_open>ul{float: left; margin-top:5%; width:30%;}
+div.gnb>div.gnb_open>ul>li{}
+div.gnb>div.gnb_open>ul>li>a{color: #066FFD;  font-weight:600; font-size:50px; line-height:100px;}
+div.gnb>div.gnb_open>ul>li>a:hover{color: #B799FF; text-decoration: underline wavy 4px;}
+/*메인 타이틀*/
+#content1>section.main>h2{ transform: translateY(500px);  transition:all 1s ease 0.5s;
+    color:#066FFD; font-size:80px; font-weight: 700; text-align: center;}  
+#content1.on>section.main>h2{transform: translateY(200px); transition: all 1s ease 0.5s;}  
+
+/*content2 introduce*/
+#content{position: relative; z-index: 10;}
+section.introduce{position:absolute; z-index: 10;}
+section.introduce>h2{margin:60px auto; color:#066FFD; font-size:48px; font-weight: 600; text-align: center; }
+
+/*큰 유리박스*/
+section.introduce>div.introduce_inner{
+    width: 80%;
+    margin:0 auto;
+    border-radius: 93px 93px;
+    background: radial-gradient(135.95% 136.40% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(35px);}
+    
+div.introduce_inner>ul{display: block; padding: 40px 100px 100px;}
+/*li 총 5개*/
+div.introduce_inner>ul>li{margin-top:50px;}
+div.introduce_inner>ul>li>ul>li{margin-top:20px;}
+div.introduce_inner>ul>li>ul>li:first-child{ text-align: left; color: #333; font-size: 48px;font-weight: 600;}
+div.introduce_inner>ul>li>ul>li{text-align: left; font-size: 24px; font-weight: 500;}
+/*.license & .education공통*/
+div.introduce_inner>ul>li>ul>li>ul{display: flex; justify-content:space-between;}
+div.introduce_inner>ul>li>ul>li>ul>li:first-of-type{flex:2;}
+div.introduce_inner>ul>li>ul>li>ul>li:nth-of-type(2){margin-right:5%; font-size:18; font-weight: 500;}
+div.introduce_inner>ul>li>ul>li>ul>li:last-of-type{font-size:16; font-weight: 400;}
+
+/*.coding_skills*//*.design_skills*/
+
+li.coding_skills>ul>li,li.design_skills>ul>li
+{text-align: center;}
+li.coding_skills>ul>li>ul,li.design_skills>ul>li>ul
+{margin-top:50px; display: flex; align-items: center; justify-content:space-between;}
+li.coding_skills>ul>li>ul>li:first-of-type,li.design_skills>ul>li>ul>li:first-of-type
+{ flex:0.5; text-align: right;}
+li.coding_skills>ul>li>ul>li:nth-of-type(2),li.design_skills>ul>li>ul>li:nth-of-type(2)
+{margin-right:0; flex:0.5; text-align: center; }
+li.coding_skills>ul>li>ul>li:last-of-type,li.design_skills>ul>li>ul>li:last-of-type
+{ flex:0.5; text-align: left; }
+
+/*content2 design*/
+#container > div > section.design{position:relative; }
+#container > div > section.design >div.design_inner{position:relative; width: 100%; height: 100%;}
+
+.bg{ position:absolute;  z-index:18;  width: 100%; height: 100%;  
+    background: radial-gradient(97.19% 175.43% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
+
+.design_btn{position:absolute; z-index:30;  top:820px; left:42%; 
+    font-size: 30px; color:#fff;}
+.design_btn_next{float: left; width:60px; height: 60px; 
+    background: url(../img/next.png) no-repeat 0 0 ; text-indent: -9999px; overflow: hidden; background-size:cover ;}
+.design_btn_info{float: left; box-sizing: border-box; width: 180px; height:60px;
+    margin: 0 20px;
+    color: #066FFD; text-align: center; line-height: 50px; 
+    border:4px solid #066FFD; border-radius: 50px;}
+.design_btn_prev{float: left; width:60px; height: 60px; 
+    background: url(../img/prev.png) no-repeat 0 0 ; text-indent: -9999px; overflow: hidden;background-size:cover ;}
+
+/*기본으로 들어가는 맨앞 메인의 */
+div.design_page{position: absolute; z-index:20; display: block; 
+    width: 1500px; height:700px;  top:10%; left:10%;}
+
+div.design_page.pn1 {position: absolute; z-index:20; display: block; 
+    width: 1500px; height:700px; }
+
+div.design_page.pn2 {position: absolute; z-index:15; display: block; 
+    left:15%; top:15%; width: 1500px; height:560px; }
+    
+div.design_page.pn3 {position: absolute; z-index:10; display: block;
+    left:20%; top:20%; width: 1500px; height:420px;}
+
+#container>div>section.design > div > div.design_page.pn0 {display: none;}
+
+div.design_inner > div > div.design_page_inner { float: left; padding: 5%; width:40%; height:79%;  background: #F9F6F1;}
+div.design_inner > div > div.design_page_inner > h2{margin-bottom: 30px; color:#066FFD; font-size:80px; font-weight: 500; text-align: left;}
+div.design_inner > div > div.design_page_inner > ul > li{margin-bottom: 10px; font-size:24px; font-weight: 400; text-align: left;}
+div.design_inner > div > div.design_page_inner > ul > li:last-child{margin-top:30px; font-size:24px; font-weight: 400; text-align: left;}
+div.design_inner > div > div.design_page_inner > ul >li>strong{font-size:28px; font-weight: 500; margin-right:5px;}
+div.design_inner > div >img{float: left;  width:50%;   height: 100%; }
+
+
+/*content2 web_app*/
+/*content04 wep&app 총3개 풀무원,더본,카카오골프*/
+#container > div > section.web_app{height: 1200px;}
+section.web_app > h2{margin:50px auto; color:#066FFD; font-size:80px; font-weight: 500; text-align: center;}
+section.web_app > div{display: flex; flex-wrap:wrap; height:700px; margin-top: 50px;
+    background:radial-gradient(131.51% 150.36% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
+
+section.web_app > div > .mock_up{width:50%; height: 500px;  padding-top:50px; text-align: center; line-height:600px;}
+section.web_app > div > .mock_up>img{ width:50%;  }
+
+/*버튼 상세*/
+.web_app_btn{}
+.web_app_btn > .web_app_btn_inner{}
+.web_app_btn > .web_app_btn_inner >div{ position: absolute; z-index: 30; top:600px;width:164px; height:48px; padding: 11px 26px 12px 26px;
+    box-sizing: border-box; color: #066FFD; font-size: 16px; font-weight: 500; line-height: 24px; 
+    border-radius: 24px; border: #066FFD solid 3px;}
+.web_app_btn > .web_app_btn_inner >div >a{color: #066FFD; font-size: 16px; font-weight: 500; line-height: 24px; }
+.web_app_btn_01{top:700px; left:78%; margin-right:20px;}
+.web_app_btn_02{top:700px; left:66%;}
+
+/*웹 접근성 유효성창*/
+.web_app_btn_02_open{display: none; position: relative; top:-680px; left:30%;
+    width: 1200px; height: 800px;  background: #F9F6F1;
+    color: #333;text-align: center;
+    border:0; border-radius: 0; }
+.web_app_btn_02_open.on{display: block;}
+
+ul.web_app_btn_02_open>li{color: #333;text-align: center; font-size: 36px; font-weight: 500;}
+ul.web_app_btn_02_open>li:first-of-type{ width: 100%; height:200px; font-size: 64px; font-weight: 500;line-height: 200px; }
+ul.web_app_btn_02_open>li:nth-of-type(2){ float: left; width: 50%; line-height: 80px;}
+ul.web_app_btn_02_open>li:nth-of-type(3){ float: left; width: 50%; line-height: 80px;}
+ul.web_app_btn_02_open>li:nth-of-type(4){ float: left; width: 50%; line-height: 80px;}
+
+/*텍스트 상세*/
+section.web_app > div > ul{display: block; width:30%; margin-left:20%; height: 500px; padding-top:50px;}
+
+section.web_app > div > ul>li>strong{color: #333; font-size: 18px; font-weight: 500; line-height: 50px; }
+section.web_app > div > ul>li:last-of-type>strong{color: #333; font-size: 18px; font-weight: 600; line-height: 40px;}
+section.web_app > div > ul>li{color: #333; font-size: 18px; font-weight: 400; line-height: 30px; }
+section.web_app > div > ul >li:first-of-type{color: #333; font-size: 70px; line-height: 120px; font-weight: 500;}
+section.web_app > div > ul >li:nth-of-type(2){color: #333;font-size: 30px;font-weight: 500;line-height: 40px; }
+
+/*pulmuone*/
+section.web_app > div.pulmuone > ul{display: block; width:30%; margin-left:20%; height: 500px; padding-top:10px;}
+
+/*content05 contact me*/
+#container > div > section.footer{ width:100%; height: 1200px;}
+section.footer>div.footer_inner{width: 50%; margin: 10% auto;}
+#container > div > section.footer>div.footer_inner>ul{transform: translateY(-1500px); transition:all 3s ease 0.5s;}
+#container > div.on > section.footer>div.footer_inner>ul{transform: translateY(0px);}  
+
+section.footer>div.footer_inner>ul>li{ color: #333;text-align: left;font-size: 32px;font-weight: 400; line-height: 80px;}
+section.footer>div.footer_inner>ul>li>img{width:40px; margin-left: 110px; margin-right: 100px;}
+section.footer>div.footer_inner>ul>li:first-of-type{margin-bottom:30px; text-align: center; color: #066FFD; font-size: 80px; font-weight: 500; line-height: 120px;}
+section.footer>div.footer_inner>ul>li:nth-of-type(2){margin-bottom:0; text-align: center; color: #333; font-size: 48px; font-weight: 500; line-height: 68px; }
+section.footer>div.footer_inner>ul>li:nth-of-type(3){margin-bottom:30px; text-align: center; color: #333; font-size: 48px; font-weight: 500; line-height: 68px; }
+section.footer>div.footer_inner>ul>li:nth-of-type(4)>img{width:35px;}
+
+
+}/*PC종료*/
+    
+
