@@ -24,26 +24,20 @@ window.addEventListener('scroll',()=>{
 
     console.log(scrollY);
 
-    for(let c=0; c<circle.length; c++){
-        if(scrollY >= (c*500) && scrollY < (c+1)*500){
-            circle[c].classList.add("on")
-        }else if(scrollY >= 17000){
-          circle[c].classList.add("end")
-        }else if(scrollY <= 17000){
-          circle[c].classList.remove("end")
-        }
-            
+    for(let c=0; c<sections.length; c++){
+
         /*10000이 넘어갈시 자동으로 모든 써클에 on이 붙음*/
-        if (scrollY >= 7000) {
+        if (scrollY >= 0) {
           circle.forEach(frame => frame.classList.add("on"));
           // 콜백 함수 내부에서 frame 변수로 각 요소에 접근할 수 있음
         }
-
-        
-        if(scrollY >= 8000){
-          circle[7].classList.remove("on")
+        if (scrollY >= 5800 ){
+          circle.forEach(frame => frame.classList.add("end"));
+          // 콜백 함수 내부에서 frame 변수로 각 요소에 접근할 수 있음
+        }else if(scrollY <= 5800){
+          circle.forEach(frame => frame.classList.remove("end"));
         }
-
+        
     }
 })
 
@@ -62,16 +56,19 @@ let devHeight = window.innerHeight;
 window.addEventListener("resize",()=>{
     devHeight = window.innerHeight;
 })
-
 for(let i=0; i<contents.length; i++){
-    if(i === 0){
-        contents[i].style.height = `${devHeight+10000}px`;
-    }else if(i===2){
-        contents[i].style.height = `${devHeight*2}px`;
-    }else{
-        contents[i].style.height = `${devHeight}px`;
-    }    
-}
+  contents[i].style.height = `${devHeight}px`;
+  }
+
+// for(let i=0; i<contents.length; i++){
+//     if(i === 0){
+//         contents[i].style.height = `${devHeight+10000}px`;
+//     }else if(i===2){
+//         contents[i].style.height = `${devHeight*2}px`;
+//     }else{
+//         contents[i].style.height = `${devHeight}px`;
+//     }    
+// }
 
 console.log(devHeight);
 

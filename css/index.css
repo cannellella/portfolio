@@ -57,35 +57,6 @@ a {color:#1e00e4; text-decoration: none;}
         .circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0); bottom:0%; right:0%; transform:scale(0); transition: top left 1s ease-out;}
         .circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
         .circle7.end > img{top:50%; } 
-        /* .circle1 > img{position: absolute; z-index: 1; width: 280px; top:40%; left:50%; transform:scale(0) ; translate:(100px,100px);} 
-        .circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 1s ease-out;} 
-        .circle1.end > img{top:80%;} 
-        
-        .circle2 > img{position: absolute; z-index: 1;  top:20%; left:30%; width:430px;  transform:scale(0);}
-        .circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 1s ease-out;}
-        .circle2.end > img{top:75%; } 
-        
-        .circle3 > img{position: absolute;  z-index: 1; top:60%; left:20%; width:300px; transform:scale(0);}
-        .circle3.on > img{transform:scale(1); top:60%; left:20%; transition: transform 1s ease-out, top 1s ease-out;}
-        .circle3.end > img{top:75%; } 
-        
-        .circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0);}
-        .circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1s ease-out;}
-        .circle4.end > img{top:70%; } 
-        
-        .circle5 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0);}
-        .circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 1s ease-out;}
-        .circle5.end > img{top:70%; } 
-        
-        .circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0);}
-        .circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 1s ease-out;}
-        .circle6.end > img{top:40%; } 
-        
-        .circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0);}
-        .circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
-        .circle7.end > img{top:50%; }  */
-        /*content0 .main_title*/
-        
         /*main_title*/
         .main_title{position: absolute;  z-index: 1; top:10%; left:10%; 
             width:100%; opacity: 0;  transition:opacity 1s ease-out;}
@@ -326,73 +297,51 @@ top:0; left:0;
 width: 100%; height:100%; 
 background:#F9F6F1;}   
 
-/* #circle_wrap>div{width: 100%;} 
-.circle1 > img{position: absolute; z-index: 1; width: 280px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;} 
-.circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 1s ease-out;} 
-.circle1.end > img{top:80%;} 
-
-.circle2 > img{position: absolute; z-index: 1; width:430px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
-.circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 1s ease-out;}
-.circle2.end > img{top:75%; } 
-
-.circle3 > img{position: absolute;  z-index: 1; width:300px; top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
-.circle3.on > img{transform:scale(1); top:60%; left:20%; transition: transform 1s ease-out, top 1s ease-out;}
-.circle3.end > img{top:75%; } 
-
-.circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0); top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
-.circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1s ease-out;}
-.circle4.end > img{top:70%; } 
-
-.circle5 > img{position: absolute;  z-index: 1;  width:350px; transform:scale(0); top:0%; right:0%; transform:scale(0); transition: top left 1s ease-out;}
-.circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 1s ease-out;}
-.circle5.end > img{top:70%; } 
-
-.circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0); top:0%; left:0%; transform:scale(0); transition: top left 1s ease-out;}
-.circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 1s ease-out;}
-.circle6.end > img{top:40%; } 
-
-.circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0); bottom:0%; right:0%; transform:scale(0); transition: top left 1s ease-out;}
-.circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
-.circle7.end > img{top:50%; }  */
-
 /*.circle1*/
-.circle1 > img{position: absolute; z-index: 1; width: 280px; top:40%; left:50%; transform:scale(0.1) ;} 
-.circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 1s ease-out;} 
+.circle1 > img{position: absolute; z-index: 1; width: 280px; top:40%; left:50%; transform:scale(0) ;} 
+.circle1.on > img{transform:scale(1); top:40%; left:50%;  transition: transform 1s ease-out, top 0s ease-out;} 
 .circle1.end > img{top:80%;} 
 /*.circle2*/
-.circle2 > img{position: absolute; z-index: 1;  top:20%; left:30%; width:430px;  transform:scale(0.1);}
-.circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle2 > img{position: absolute; z-index: 1;  top:20%; left:30%; width:430px;  transform:scale(0);}
+.circle2.on > img{transform:scale(1); top:20%; left:30%; transition: transform 1s ease-out, top 0.5s ease-out;}
 .circle2.end > img{top:75%; } 
 /*.circle3*/
-.circle3 > img{position: absolute;  z-index: 1; top:60%; left:20%; width:300px; transform:scale(0.1);}
+.circle3 > img{position: absolute;  z-index: 1; top:60%; left:20%; width:300px; transform:scale(0);}
 .circle3.on > img{transform:scale(1); top:60%; left:20%; transition: transform 1s ease-out, top 1s ease-out;}
 .circle3.end > img{top:75%; } 
 /*.circle4*/
-.circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0.1);}
-.circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1s ease-out;}
+.circle4 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0);}
+.circle4.on > img{transform:scale(1); top:70%; right:25%;  transition: transform 1s ease-out, top 1.5s ease-out;}
 .circle4.end > img{top:70%; } 
 /*.circle5*/
-.circle5 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0.1);}
-.circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle5 > img{position: absolute;  z-index: 1;   width:350px; transform:scale(0);}
+.circle5.on > img{transform:scale(1); top:5%; right:10%; transition: transform 1s ease-out, top 2s ease-out;}
 .circle5.end > img{top:70%; } 
 /*.circle6*/
-.circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0.1);}
-.circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle6 > img{position: absolute;  z-index: 1;   width:700px; transform:scale(0);}
+.circle6.on > img{transform:scale(1); top:-5%; left:-5%; transition: transform 1s ease-out, top 2.5s ease-out;}
 .circle6.end > img{top:40%; } 
 /*.circle7*/
-.circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0.1);}
-.circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 1s ease-out;}
+.circle7 > img{position: absolute;  z-index: 1;   width:750px; transform:scale(0);}
+.circle7.on > img{transform:scale(1); bottom:-10%; right:-10%; transition: transform 1s ease-out, top 3s ease-out;}
 .circle7.end > img{top:50%; }  
 
 /*main_title*/
-.main_title{position: absolute;  z-index: 1; top:10%; left:10%; 
-    width:100%; opacity: 0;  transition:opacity 1s ease-out;}
+.main_title{position: absolute;  z-index: 1; top:0; left:0;
+    width:100%; height:100%; opacity: 0;  transition:opacity 1s ease-out;}
 .main_title.on {opacity: 1;} 
 .main_title_inner{
     width: 80%; height: 80vh;  
     background: radial-gradient(97.19% 175.43% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
-.main_title_inner>h1{padding:15%; font-size:150px; color:#066FFD; font-weight: 700; text-align: center; line-height: 180px;}
+  /*  .main_title_inner>h1{
+        padding:15%;font-size:150px; color:rgba(0, 0, 0, 0.00);  font-weight: 700; text-align: center; line-height: 180px;} */
+        
+.main_title_inner>h1{display: block; position: absolute; top:10%; left:10%;  width: 50%; height: 50%;  
+    background: transparent;
+    padding:15%;font-size:150px; color: rgba(255,0,0,0.1); font-weight: 700; text-align: center; line-height: 180px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;	}
 
 
 
@@ -405,7 +354,7 @@ background:#F9F6F1;}
 #container > div{width:100%; overflow: hidden;}
 
 /*건들지 말것! 작업 끝난후 dev height 추가예정*/
-#container > div > section{position:absolute; z-index:10; width:100%; height:100%; overflow: hidden;  }
+#container > div > section{position:absolute; z-index:10; width:100%; height:100%; overflow: hidden;}
 
 #container > div > section.on{}
 
@@ -438,8 +387,8 @@ section.main{position: relative; z-index: 10;}
 
 /*전역 메뉴바 gnb_btn 누르면 gnb가 on됨*/
 div.gnb{}
-div.gnb>h2{position: fixed; display:block; z-index: 100; top:0%; left:5%; width:20%;  font-size: 100px; margin:30px auto; 
-    color:#066FFD; font-weight: 700; font-size:60px; text-align:center; line-height: 1.1;}
+div.gnb>h2{position: fixed; display:block; z-index: 100; top:0%; left:5%; width:20%;margin:30px auto; 
+    color:#066FFD; font-weight: 700; font-size:48px; text-align:center; line-height: 1.1;}
 div.gnb>div.gnb_btn{position:fixed; z-index:150; top:5%; right: 10%; width:60px; height:60px; 
     background:url(../img/gnb_on.png) no-repeat 0 0; background-size:cover;}
 div.gnb.on>div.gnb_btn{background:url(../img/gnb_off.png) no-repeat 0 0; background-size:cover;}
@@ -451,7 +400,7 @@ div.gnb.on>div.gnb_open{display: block;}
 /*오픈후 메뉴*/
 /*제목*/
 div.gnb.on>div.gnb_open>h2>a{float:left; margin-left:10%; margin-right:30%; color:#066FFD; 
-    font-weight: 700;  font-size:70px; text-align: center;}
+    font-weight: 700;  font-size:60px; text-align: center; line-height:75px;}
 /*메뉴바 열린후의 모습*/
 div.gnb>div.gnb_open>ul{float: left; margin-top:5%; width:30%;}
 div.gnb>div.gnb_open>ul>li{}
@@ -465,7 +414,7 @@ div.gnb>div.gnb_open>ul>li>a:hover{color: #B799FF; text-decoration: underline wa
 /*content2 introduce*/
 #content{position: relative; z-index: 10;}
 section.introduce{position:absolute; z-index: 10;}
-section.introduce>h2{margin:60px auto; color:#066FFD; font-size:48px; font-weight: 600; text-align: center; }
+section.introduce>h2{margin:30px auto; color:#066FFD; font-size:48px; font-weight: 600; text-align: center; }
 
 /*큰 유리박스*/
 section.introduce>div.introduce_inner{
@@ -475,41 +424,50 @@ section.introduce>div.introduce_inner{
     background: radial-gradient(135.95% 136.40% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(35px);}
-    
-div.introduce_inner>ul{display: block; padding: 40px 100px 100px;}
+  
+div.introduce_inner>ul{ width:100%; height: 700px;  padding: 40px 100px 100px; box-sizing: border-box; }
+div.introduce_inner>ul>li{display: block; float: left; }
+
+li.name{width: 50%; height: 40%; }
+li.name>img{ }
+li.coding_skills{ width: 50%; height: 15%;}
+li.design_skills{padding-top: 5%; width: 50%; height: 15%;}
+
+li.license{padding-top: 5%; width: 50%; height: 50%;}
+li.education{padding-top: 5%; width: 50%; height: 50%;} 
 /*li 총 5개*/
-div.introduce_inner>ul>li{margin-top:50px;}
-div.introduce_inner>ul>li>ul>li{margin-top:20px;}
-div.introduce_inner>ul>li>ul>li:first-child{ text-align: left; color: #333; font-size: 48px;font-weight: 600;}
-div.introduce_inner>ul>li>ul>li{text-align: left; font-size: 24px; font-weight: 500;}
+
+div.introduce_inner>ul>li>ul>li{text-align: left; margin-top:10px;font-size: 16px; font-weight: 500;}
+div.introduce_inner>ul>li>ul>li:first-child{ text-align:left; color: #333; font-size:36px;font-weight: 600;}
 /*.license & .education공통*/
-div.introduce_inner>ul>li>ul>li>ul{display: flex; justify-content:space-between;}
-div.introduce_inner>ul>li>ul>li>ul>li:first-of-type{flex:2;}
-div.introduce_inner>ul>li>ul>li>ul>li:nth-of-type(2){margin-right:5%; font-size:18; font-weight: 500;}
+div.introduce_inner>ul>li>ul>li>ul{display:flex;}
+div.introduce_inner>ul>li>ul>li>ul>li:nth-of-type(2){ font-size:18; font-weight: 500;}
 div.introduce_inner>ul>li>ul>li>ul>li:last-of-type{font-size:16; font-weight: 400;}
 
 /*.coding_skills*//*.design_skills*/
-
+li.coding_skills>ul>li{}
 li.coding_skills>ul>li,li.design_skills>ul>li
-{text-align: center;}
+{}
 li.coding_skills>ul>li>ul,li.design_skills>ul>li>ul
-{margin-top:50px; display: flex; align-items: center; justify-content:space-between;}
-li.coding_skills>ul>li>ul>li:first-of-type,li.design_skills>ul>li>ul>li:first-of-type
-{ flex:0.5; text-align: right;}
+{margin-top:30px; display: flex; align-items: center; justify-content:space-around;}
+ li.coding_skills>ul>li>ul>li:first-of-type,li.design_skills>ul>li>ul>li:first-of-type
+{ flex:0.5; }
 li.coding_skills>ul>li>ul>li:nth-of-type(2),li.design_skills>ul>li>ul>li:nth-of-type(2)
-{margin-right:0; flex:0.5; text-align: center; }
+{ flex:0.5; }
 li.coding_skills>ul>li>ul>li:last-of-type,li.design_skills>ul>li>ul>li:last-of-type
-{ flex:0.5; text-align: left; }
+{ flex:0.5; }   
 
 /*content2 design*/
 #container > div > section.design{position:relative; }
+
+#container > div > section.design > h2{margin:10px auto; color:#066FFD; font-size:80px; font-weight: 500; text-align: center; }
 #container > div > section.design >div.design_inner{position:relative; width: 100%; height: 100%;}
 
 .bg{ position:absolute;  z-index:18;  width: 100%; height: 100%;  
     background: radial-gradient(97.19% 175.43% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
 
-.design_btn{position:absolute; z-index:30;  top:820px; left:42%; 
+.design_btn{position:absolute; z-index:30;  top: 700px;; left:42%; 
     font-size: 30px; color:#fff;}
 .design_btn_next{float: left; width:60px; height: 60px; 
     background: url(../img/next.png) no-repeat 0 0 ; text-indent: -9999px; overflow: hidden; background-size:cover ;}
@@ -522,21 +480,21 @@ li.coding_skills>ul>li>ul>li:last-of-type,li.design_skills>ul>li>ul>li:last-of-t
 
 /*기본으로 들어가는 맨앞 메인의 */
 div.design_page{position: absolute; z-index:20; display: block; 
-    width: 1500px; height:700px;  top:10%; left:10%;}
+    width: 1500px; height:700px;  top:0%; left:10%;}
 
 div.design_page.pn1 {position: absolute; z-index:20; display: block; 
     width: 1500px; height:700px; }
 
 div.design_page.pn2 {position: absolute; z-index:15; display: block; 
-    left:15%; top:15%; width: 1500px; height:560px; }
+    left:15%; top:10%; width: 1500px; height:560px; }
     
 div.design_page.pn3 {position: absolute; z-index:10; display: block;
-    left:20%; top:20%; width: 1500px; height:420px;}
+    left:20%; top:15%; width: 1500px; height:420px;}
 
 #container>div>section.design > div > div.design_page.pn0 {display: none;}
 
 div.design_inner > div > div.design_page_inner { float: left; padding: 5%; width:40%; height:79%;  background: #F9F6F1;}
-div.design_inner > div > div.design_page_inner > h2{margin-bottom: 30px; color:#066FFD; font-size:80px; font-weight: 500; text-align: left;}
+div.design_inner > div > div.design_page_inner > h2{margin-bottom: 30px; color:#333; font-size:48px; font-weight: 500; text-align: left;}
 div.design_inner > div > div.design_page_inner > ul > li{margin-bottom: 10px; font-size:24px; font-weight: 400; text-align: left;}
 div.design_inner > div > div.design_page_inner > ul > li:last-child{margin-top:30px; font-size:24px; font-weight: 400; text-align: left;}
 div.design_inner > div > div.design_page_inner > ul >li>strong{font-size:28px; font-weight: 500; margin-right:5px;}
