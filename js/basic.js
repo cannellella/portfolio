@@ -7,18 +7,37 @@ gnbBtn.addEventListener("click",(e)=>{
 });
 
 //content4,5,6 웹유효성,접근성 팝업버튼 
-const testViewBtn = document.querySelector(".web_app_btn_02")
-const testViewOpen = document.querySelector(".web_app_btn_02_open")
+const testOpenBtn = document.querySelectorAll(".web_app_btn_open")
+const testCloseBtn = document.querySelectorAll(".web_app_btn_close")
+const testViewOpen = document.querySelectorAll(".web_app_btn_open_test")
+const testMoveBtn = document.querySelectorAll(".web_app_btn_01")
 
-testViewBtn.addEventListener("click",(e)=>{
-    testViewOpen.classList.toggle("on");
-});
+
+/*오픈하는경우(오픈되어있지않음)*/ 
+  for(let c=0; c<testOpenBtn.length; c++){
+    testOpenBtn[c].addEventListener("click",(e)=>{
+      testViewOpen[c].classList.add("on");
+      testCloseBtn[c].classList.add("on");
+      testOpenBtn[c].classList.add("on");
+      testMoveBtn[c].classList.add("on");
+    });
+  }
+/*클로즈하는경우(오픈되어있음)*/ 
+  for(let c=0; c<testCloseBtn.length; c++){
+    testCloseBtn[c].addEventListener("click",(e)=>{
+      testViewOpen[c].classList.remove("on");
+      testCloseBtn[c].classList.remove("on");
+      testOpenBtn[c].classList.remove("on");
+      testMoveBtn[c].classList.remove("on");
+    });
+  }
+
+
 
 
 //써클 이벤트들 
 let circle = document.querySelectorAll("#circle_wrap>div");
 //창문
-
 window.addEventListener('scroll',()=>{
     let scrollY = window.scrollY;
 
@@ -27,14 +46,21 @@ window.addEventListener('scroll',()=>{
     for(let c=0; c<sections.length; c++){
 
         /*10000이 넘어갈시 자동으로 모든 써클에 on이 붙음*/
-        if (scrollY >= 0) {
+        // scrollY >= sections[c].offsetTop && scrollY < sections[c].offsetTop + sections[c].clientHeight
+        if (scrollY >= 0 ) {
           circle.forEach(frame => frame.classList.add("on"));
           // 콜백 함수 내부에서 frame 변수로 각 요소에 접근할 수 있음
         }
-        if (scrollY >= 5800 ){
+        if (scrollY >= sections[c+1].offsetTop){
+          circle.forEach(frame => frame.classList.add("con2"));
+        }else if(scrollY < sections[c+1].offsetTop){
+          circle.forEach(frame => frame.classList.remove("con2"));
+        }
+
+        if (scrollY >= sections[c+7].offsetTop){
           circle.forEach(frame => frame.classList.add("end"));
           // 콜백 함수 내부에서 frame 변수로 각 요소에 접근할 수 있음
-        }else if(scrollY <= 5800){
+        }else if(scrollY <= sections[c+7].offsetTop){
           circle.forEach(frame => frame.classList.remove("end"));
         }
         
@@ -83,6 +109,7 @@ for(let h=0; h<lis.length; h++){
     activation(h*devHeight)
   });
 }
+
   
 /*content 화면 스크롤을 위아래로 움직일때 한번에 내려가는 효과*/ 
 /*content에서 마우스 휠을 움직였을때 
@@ -124,12 +151,12 @@ let activation = (scrTop) => {
       behavior:"smooth"
     });
     
-    // for(t=0; t<sections.length; t++){
-    //   if(scrTop >= [t]*devHeight && scrTop<(t+1)*devHeight){
-    //     activation2(t,contents);
+    for(t=0; t<sections.length; t++){
+      if(scrTop >= [t]*devHeight && scrTop<(t+1)*devHeight){
+        activation2(t,contents);
         
-    //   }
-    // }
+      }
+    }
 }
 /*2번 함수 forEach 문 함수(화살표식)*/
 let activation2 =(index,list)=>{
@@ -149,43 +176,6 @@ const designBtnPrev = document.querySelector("div.design_btn_prev");
 //quick을 눌렀을때 스크롤이 
 //content(윈도우) 높이값 만큼씩 움직이게 li.on을 눌러라
 console.log(designPage)
-
-// let currentIndex = 0;
-
-// designBtnNext.addEventListener("click", (e) =>{
-//   currentIndex++; // 현재 인덱스 증가
-
-//   if (currentIndex >= designPage.length) {
-//     currentIndex = 0;
-//   }
-
-//   for(let d=0; d<designPage.length; d++){
-//     console.log(d)
-//       if(d === 0){
-//         designPage[d].classList.add("pn1");
-//         designPage[d].classList.remove("pn2");
-//         designPage[d].classList.remove("pn3");
-//         designPage[d].classList.remove("pn0");
-//       }else if(d === 1){
-//         designPage[d].classList.remove("pn1");
-//         designPage[d].classList.add("pn2");
-//         designPage[d].classList.remove("pn3");
-//         designPage[d].classList.remove("pn0");
-//       }else if(d === 2){
-//         designPage[d].classList.remove("pn1");
-//         designPage[d].classList.remove("pn2");
-//         designPage[d].classList.add("pn3");
-//         designPage[d].classList.remove("pn0");
-//       }else{
-//         designPage[d].classList.remove("pn1");
-//         designPage[d].classList.remove("pn2");
-//         designPage[d].classList.remove("pn3");
-//         designPage[d].classList.add("pn0");
-//       } 
-      
-//     }
-
-// });
 
 
 let currentIndex = 0;
@@ -222,3 +212,35 @@ designBtnNext.addEventListener("click", () => {
   }
 });
 
+
+designBtnPrev.addEventListener("click", () => {
+  currentIndex++; // 현재 인덱스 증가
+
+  if (currentIndex >= designPage.length) {
+    currentIndex = 0;
+  }
+
+  for (let d = 0; d < designPage.length; d++) {
+    if (d === currentIndex) {
+      designPage[d].classList.add("pn1");
+      designPage[d].classList.remove("pn2");
+      designPage[d].classList.remove("pn3");
+      designPage[d].classList.remove("pn0");
+    } else if (d === currentIndex - 1 ) {
+      designPage[d].classList.remove("pn1");
+      designPage[d].classList.add("pn2");
+      designPage[d].classList.remove("pn3");
+      designPage[d].classList.remove("pn0");
+    } else if (d === currentIndex - 2 ) {
+      designPage[d].classList.remove("pn1");
+      designPage[d].classList.remove("pn2");
+      designPage[d].classList.add("pn3");
+      designPage[d].classList.remove("pn0");
+    } else {
+      designPage[d].classList.remove("pn1");
+      designPage[d].classList.remove("pn2");
+      designPage[d].classList.remove("pn3");
+      designPage[d].classList.add("pn0");
+    }
+  }
+});
