@@ -1,3 +1,5 @@
+
+
 //전역 메뉴바 기본 토글버튼
 const gnbBtn = document.querySelector("div.gnb_btn")
 const gnbMenu = document.querySelector("div.gnb")
@@ -31,16 +33,21 @@ const testMoveBtn = document.querySelectorAll(".web_app_btn_01")
       testMoveBtn[c].classList.remove("on");
     });
   }
-
-
-
+//서클 이벤트 1번 5초후 실행
+let start = setTimeout(()=>{
+  contents[0].classList.add("on");
+  if (contents[0].classList.contains("on")){
+    circle.forEach(frame => frame.classList.add("on"));
+  }
+}, 500);
 
 //써클 이벤트들 
-let circle = document.querySelectorAll("#circle_wrap>div");
+let circle = document.querySelectorAll("#circle_wrap > div");
 //창문
 window.addEventListener('scroll',()=>{
   for (let c = 0; c < contents.length; c++) {
-    if (contents[c].classList.contains("on")) {
+
+    if (c === 0 && contents[c] && contents[c].classList.contains("on")) {
       circle.forEach(frame => frame.classList.add("on"));
       circle.forEach(frame => frame.classList.remove("con1"));
       circle.forEach(frame => frame.classList.remove("end"));
@@ -66,64 +73,9 @@ window.addEventListener('scroll',()=>{
       circle.forEach(frame => frame.classList.add("end"));
       
     }
-//         circle.forEach(frame => frame.classList.add("on"));
-//         circle.forEach(frame => frame.classList.add("con1"));
-//         circle.forEach(frame => frame.classList.remove("con2"));
-//         break; // 추가된 경우에 더 이상 반복할 필요가 없으므로 반복문 종료
-//     } else if(contents[c+1].classList.contains("on")){
-//       circle.forEach(frame => frame.classList.remove("on"));
-//         circle.forEach(frame => frame.classList.add("con1"));
-//         circle.forEach(frame => frame.classList.remove("con2"));
-//         break;
-//     }else if(contents[c+2].classList.contains("on")){
-//       circle.forEach(frame => frame.classList.remove("on"));
-//       circle.forEach(frame => frame.classList.remove("con1"));
-//       circle.forEach(frame => frame.classList.add("con2"));
-//       break;
-//     }else if(contents[c+7].classList.contains("on")){
-//       circle.forEach(frame => frame.classList.remove("on"));
-//       circle.forEach(frame => frame.classList.add("end"));
-//       circle.forEach(frame => frame.classList.remove("con1"));
-//       circle.forEach(frame => frame.classList.remove("con2"));
-//         break;
-//     }else{
-//       circle.forEach(frame => frame.classList.remove("on"));
-//       circle.forEach(frame => frame.classList.remove("con1"));
-//       circle.forEach(frame => frame.classList.remove("con2"));
-//       circle.forEach(frame => frame.classList.remove("end"));
-// }
   }
 })
-//     for(let c=1; c<sections.length; c++){
 
-//         /*10000이 넘어갈시 자동으로 모든 써클에 on이 붙음*/
-//         // scrollY >= sections[c].offsetTop && scrollY < sections[c].offsetTop + sections[c].clientHeight
-//         if (scrollY >= 0 ) {
-//           circle.forEach(frame => frame.classList.add("on"));
-//           // 콜백 함수 내부에서 frame 변수로 각 요소에 접근할 수 있음
-//         }
-//         if (scrollY >= sections[c+1].offsetTop){
-//           circle.forEach(frame => frame.classList.add("con2"));
-//         }else if(scrollY < sections[c+1].offsetTop){
-//           circle.forEach(frame => frame.classList.remove("con2"));
-//         }
-
-//         if (scrollY <= sections[c+2].offsetTop){
-//           circle.forEach(frame => frame.classList.add("con1"));
-//         }else if(scrollY <= sections[c+2].offsetTop){
-//           circle.forEach(frame => frame.classList.remove("con1"));
-//         }
-
-//         if (scrollY >= sections[c+7].offsetTop && scrollY <= sections[c+7].offsetTop) {
-//           circle.forEach(frame => frame.classList.add("end"));
-//           // 콜백 함수 내부에서 frame 변수로 각 요소에 접근할 수 있음
-//         }else {
-//           circle.forEach(frame => frame.classList.remove("end"));
-//         }
-
-        
-//     }
-// })
 
 //main.js
 const contents = document.querySelectorAll("#container>div");
@@ -233,8 +185,6 @@ const designBtnNext = document.querySelector("div.design_btn_next");
 const designBtnPrev = document.querySelector("div.design_btn_prev");
 //quick을 눌렀을때 스크롤이 
 //content(윈도우) 높이값 만큼씩 움직이게 li.on을 눌러라
-console.log(designPage)
-
 
 let currentIndex = 0;
 
