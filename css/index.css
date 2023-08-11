@@ -38,120 +38,192 @@ width: 100%; height:100%;
 background:#F9F6F1;}   
 
 /*.circle1*/
-.circle1 > img{position: absolute; z-index: 1; transform:scale(0);  width:280px; top:40%; left:50%;transition: transform 1s ease-out, top 1s ease-out;
-    animation:circle_start1  3s linear 3s alternate;}
-.circle1.on > img{transform:scale(1); transition:top linear 1s ease-out;}
+.circle1 > img{
+    position: absolute; z-index: 1; top:40%; left:50%; 
+    transform:scale(0); width:280px; 
+    transition: transform 1s ease-out, top 1s ease-out;}
+    /* animation:circle_start1 6s linear 0s alternate; */
+.circle1.on > img{transform:scale(1);
+    transition:top linear 1s ease-out;}
 /*footer*/
-.circle1.end > img{top:80%; animation:circle_width1 4s ease-in Infinite Alternate;} 
+.circle1.end > img{top:80%; animation:circle_jump1 4s ease-in Infinite Alternate;} 
 /*introduce*/
 .circle1.con2 > img{width:500px; top:0%}
+/*main*/
+.circle1.con1 > img{animation: circle_main 3s ease-in Infinite Alternate;}
 
-@keyframes circle_width1 {
-    0%{width:0px; top:90%}
+@keyframes circle_jump1 {
+    0%{width:200px; top:90%}
     50%{width:250px;}
     100%{top:40%; width:280px; height:250px; }
 }
 
 @keyframes circle_start1 {
-    from{top:50%; width:0px;}
-    to{top:40%; width:280px;}
+    from{top:0%; transform:scale(0);}
+    to{top:40%; transform:scale(1);}
 }
-
+@keyframes circle_main {
+    0%{width:300px;   height: 300px; opacity: 0.5; }
+    50%{width:280px;   height: 280px; opacity: 1;  }
+    100%{width:300px;   height: 300px;  opacity: 0.5; }
+}
 /*.circle2*/
-.circle2 > img{position: absolute; z-index: 1;  top:20%; left:30%;  width: 0px; transition:top linear 1s ease-out; 
-    animation:circle_start2  3s linear 2.5s alternate; }
-.circle2.on > img{width:430px;
-    transition: transform 1s ease-out, top 1s ease-out;}
+.circle2 > img{ 
+    position: absolute; z-index: 1;  top:20%; left:30%;  
+    transform:scale(0); width:430px; 
+    transition:top linear 1s ease-out; }
+    /* animation:circle_start2 6s linear 0s alternate; */
+.circle2.on > img{transform:scale(1);
+    transition: transform 6s ease-out, top 1s ease-out;}
+/*footer*/
 .circle2.end > img{top:75%;} 
 /*introduce*/
 .circle2.con2 > img{width:600px;}
-
+/*main*/
+.circle2.con1 > img{animation: circle_jump_02 6s ease-in-out Infinite Alternate;}
 
 @keyframes circle_start2 {
-    0%{top:50%; left:50%; width:0px;}
-    100%{top:20%; left:30%;  width:430px;}
+    0%{top:0%; left:0%; transform:scale(0);}
+    100%{top:20%; left:30%;  transform:scale(1);}
 }
-
+@keyframes circle_jump_02 {
+    0%{ width:430px;   height: 430px; opacity: 0.5;}
+    50%{ width:400px;   height: 400px; opacity: 1;}
+    100%{ width:430px;   height: 430px; opacity: 0.5;}
+}
 /*.circle3*/
-.circle3 > img{position: absolute;  z-index: 1; top:60%; left:20%;  width: 0px;transition:top linear 1s ease-out;
-    animation:circle_start3  4s linear 2s alternate;}
-.circle3.on > img{width:300px;
+.circle3 > img{
+    position: absolute;  z-index: 1; top:60%; left:20%;
+    transform:scale(0);  width:300px; 
+    transition:top linear 1s ease-out;}
+    /* animation:circle_start3 8s linear 0s alternate; */
+    
+.circle3.on > img{width:500px; transform:scale(1);
     transition: transform 1s ease-out, top 1s ease-out;}
 /*footer*/
 .circle3.end > img{top:75%;} 
 /*introduce*/
 .circle3.con2 > img{width:500px; left:10%;}
+/*main*/
+.circle3.con1 > img{animation: circle_jump_03 5s ease-in Infinite Alternate;}
 
 @keyframes circle_start3 {
-    0%{top:50%; left:50%; width:0px;}
-    100%{top:60%; left:20%;  width:300px;}
+    0%{top:0%; left:0%; transform:scale(0);}
+    100%{top:60%; left:20%;  transform:scale(1);}
+}
+
+@keyframes circle_jump_03 {
+    0%{width:300px;  height: 300px; }
+    50%{width:350px;  height: 380px; }
+    100%{width:300px;  height: 300px; }
 }
 
 /*.circle4*/
-.circle4 > img{position: absolute; z-index: 1; width: 0px; top:70%; right:25%;transition:top linear 1s ease-out;
-    animation:circle_start4  4s linear 1.5s alternate;}
-.circle4.on > img{width:430px;
+.circle4 > img{
+    position: absolute; z-index: 1; top:70%; right:25%;
+    transform:scale(0); width:430px;
+    transition:top linear 1s ease-out;}
+    /* animation:circle_start4 8s linear 0s alternate; */
+.circle4.on > img{transform:scale(1);
     transition: transform 1s ease-out, top 1s ease-out;}
 /*footer*/
-.circle4.end > img{top:70%; } 
+.circle4.end > img{top:70%;} 
 /*introduce*/
-.circle4.con2 > img{width:600px; top:50%;}
+.circle4.con2 > img{width:500px; top:50%;}
+/*main*/
+.circle4.con1 > img{animation: circle_jump_04 4s ease-in Infinite Alternate;}
 
 @keyframes circle_start4 {
-    0%{top:50%; right:50%; width:0px;}
-    100%{top:70%;  right:25%;  width:430px;}
+    0%{top:0; right:0%; transform:scale(0);}
+    100%{top:70%;  right:25%;  transform:scale(1);}
+}
+
+@keyframes circle_jump_04 {
+    0%{width:430px;  height: 430px; opacity: 0.5;}
+    50%{width:400px; height: 400px; opacity: 1;}
+    100%{width:430px; height: 430px; opacity: 0.5;}
 }
 
 /*.circle5*/
-.circle5 > img{position: absolute;  z-index: 1; width: 0px; top:5%; right:10%;transition:top linear 1s ease-out;
-    animation:circle_start5  4s linear 1s alternate;}
-.circle5.on > img{ width:350px;
+.circle5 > img{
+    position: absolute;  z-index: 1; top:5%; right:10%;
+    width:350px; transform:scale(0);
+    transition:top linear 1s ease-out;}
+    /* animation:circle_start5 10s linear 0s alternate; */
+.circle5.on > img{
+    transform:scale(1);
     transition: transform 1s ease-out, top 1s ease-out;}
 /*footer*/
 .circle5.end > img{top:70%; } 
 /*introduce*/
 .circle5.con2 > img{width:400px; right:5%;}
+/*main*/
+.circle5.con1 > img{animation: circle_jump_05 6s ease-in Infinite Alternate;}
 
 @keyframes circle_start5 {
-    0%{top:50%; right:50%; width:0px;}
-    100%{top:5%; right:10%;  width:350px;}
+    0%{top:0%; right:0%; transform:scale(0);}
+    100%{top:5%; right:10%; transform:scale(1);}
+}
+
+@keyframes circle_jump_05 {
+    0%{width:350px;  height:350px; opacity: 0.5;}
+    50%{width:450px;  height:430px;  opacity: 1;}
+    100%{ width:350px;  height:350px; opacity: 0.5;}
 }
 
 /*.circle6*/
-.circle6 > img{position: absolute;  z-index: 1; width: 0px;top:-5%; left:-5%;transition:top linear 1s ease-out;
-    animation:circle_start6  4s linear 0.5s alternate;}
-.circle6.on > img{width:700px;
+.circle6 > img{
+    position: absolute;  z-index: 1; top:-5%; left:-5%;
+    width:700px; transform:scale(0);
+    transition:top linear 1s ease-out;
+    }
+    /* animation:circle_start6  12s linear 0s alternate; */
+.circle6.on > img{width:700px;transform:scale(1);
     transition: transform 1s ease-out, top 1s ease-out;}
 /*footer*/
 .circle6.end > img{top:40%; } 
 /*introduce*/
 .circle6.con2 > img{width:800px;}
-
+/*main*/
+.circle6.con1 > img{animation: circle_jump_06 4s ease-in Infinite Alternate;}
 @keyframes circle_start6 {
-    0%{top:50%; left:50%; width:0px;}
-    100%{top:-5%; left:-5%; width:700px;}
+    0%{top:0%; left:0%; transform:scale(0);}
+    100%{top:-5%; left:-5%; transform:scale(1);}
+}
+
+@keyframes circle_jump_06 {
+    0%{width:700px; height:700px; }
+    50%{width:750px; height:750px;}
+    100%{width:700px;  height:700px;}
 }
 
 /*.circle7*/
-.circle7 > img{position: absolute;  z-index: 1;  width: 0px; bottom:-10%; right:-10%;
-    transition:top linear 1s ease-out; animation:circle_start7  4s linear 0s alternate;}
-.circle7.on > img{width:750px; 
+.circle7 > img{position: absolute;  z-index: 1; bottom:-10%; right:-10%;
+    width:750px; transform:scale(0);
+    transition:top linear 0s ease-out;}
+   /* animation:circle_start7 12s linear 0s alternate; */
+.circle7.on > img{
+    transform:scale(1);
     transition: transform 1s ease-out, top 1s ease-out;}
 /*footer*/
 .circle7.end > img{top:50%; }  
 /*introduce*/
 .circle7.con2 > img{width:800px;}
+/*main*/
+.circle7.con1 > img{animation: circle_jump_07 4s ease-in Infinite Alternate;}
 
 @keyframes circle_start7 {
-    0%{bottom:50%; right:50%; width:0px;}
-    100%{bottom:-10%; right:-10%; width:750px;}
+    0%{bottom:0%; right:0%; transform:scale(0);}
+    100%{bottom:-10%; right:-10%; transform:scale(1);}
 }
 
-@keyframes circle_width {
-    0%{width:20%;}
-    50%{width:30%;}
-    100%{width:20%;}
+@keyframes circle_jump_07 {
+    0%{width:700px; height:750px; }
+    50%{width:750px; height:750px;}
+    100%{width:700px;  height:750px;}
 }
+
+
 /*main_title*/
 .main_title{display: none;  position: absolute;  z-index: 1; top:10%; left:20%; width:80%; height:80%; opacity: 0;  
     transition:opacity 1s ease-out;}
@@ -239,18 +311,27 @@ div#content2.on>section.introduce>h2{animation: con2  3s ease-in-out infinite al
     0%{ background: linear-gradient(45deg, #06CBF9 30%, #267EFB 60%, #26E4B5 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;}
+        -webkit-text-fill-color: transparent;
+        -webkit-background-position:50%;
+    }
 
-    50%{ background: linear-gradient(45deg, #06CBF9 30%, #26E4B5 60%, #267EFB 100%);
+    /* 50%{ background: linear-gradient(45deg, #06CBF9 30%, #26E4B5 60%, #267EFB 100%);
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;}
+            -webkit-text-fill-color: transparent;} */
 
-    100%{background: linear-gradient(45deg, #267EFB 30%, #26E4B5 60%, #06CBF9 100%);
+    /* 100%{background: linear-gradient(45deg, #267EFB 30%, #26E4B5 60%, #06CBF9 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;}
-}
+        -webkit-text-fill-color: transparent;} */
+
+    0%{ background: linear-gradient(45deg, #06CBF9 30%, #267EFB 60%, #26E4B5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-position:-50%;
+    }
+    }
 
 /*큰 유리박스*/
 section.introduce>div.introduce_inner{
