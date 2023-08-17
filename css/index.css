@@ -849,7 +849,7 @@ section.introduce>h3{margin:30px auto;  font-size:80px; font-weight: 600; text-a
 /*큰 유리박스*/
 section.introduce>div.introduce_inner{
     width: 85%; height: 76vh;
-    margin:0 auto; padding:2% ; box-sizing: border-box;
+    margin:0 auto; padding:3% ; box-sizing: border-box;
     border-radius: 93px 93px;
     background: radial-gradient(135.95% 136.40% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -863,9 +863,9 @@ section.introduce>div.introduce_inner{
 .introduce_name>ul>li:last-of-type{margin-top: 20px; font-size: 18px;}
 .introduce_name>ul>li>img{width: 300px; height:300px; margin:30px auto; border-radius: 50%;}
 
-.introduce_skills{float: right; width: 60%;}
+.introduce_skills{float: right; width: 50%;}
 
-.introduce_skills>div{margin-bottom:80px;}
+.introduce_skills>div{margin-bottom:60px;}
 .introduce_skills>div>h4{text-align: left; margin-bottom:10px; font-size: 36px; font-weight: 500;}
 .introduce_skills>div>div{display: flex; justify-content: space-between;}
 .introduce_skills>div>div>svg{}
@@ -873,7 +873,7 @@ section.introduce>div.introduce_inner{
 
 .introduce_skills>ul{display: block; clear: both; width: 100%; }
 
-.introduce_skills>ul>li{margin-bottom:80px;}
+.introduce_skills>ul>li{margin-bottom:60px;}
 .introduce_skills>ul>li:last-of-type{margin-top: 30px;}
 .introduce_skills>ul>li>ul>li{margin-top: 10px; text-align: left; font-size: 36px; font-weight: 500;}
 .introduce_skills>ul>li>ul>li>ul{display: flex; justify-content: space-between; margin-top: 10px;}
@@ -883,9 +883,9 @@ li.certificate>ul>li>ul>li:first-of-type{flex: 2;}
 li.certificate>ul>li>ul>li:nth-of-type(2){flex: 1;}
 li.certificate>ul>li>ul>li:last-of-type{flex: 1;  text-align: right;}
 
-li.education>ul>li>ul>li:first-of-type{flex:1.5;}
-li.education>ul>li>ul>li:nth-of-type(2){flex:0.5;}
-li.education>ul>li>ul>li:last-of-type{text-align: right; flex: 1.5; }
+li.education>ul>li>ul>li:first-of-type{flex:2;}
+li.education>ul>li>ul>li:nth-of-type(2){flex:1;}
+li.education>ul>li>ul>li:last-of-type{text-align: right; flex: 1; }
 
 /*content2 design*/
 #container > div > section.design{position:relative; }
@@ -925,7 +925,7 @@ div.design_page.pn3 {position: absolute; z-index:10; display: block;
 
 div.design_inner > div > div.design_page_inner {float: left; padding: 5%; width:40%; height:79%;      
     background: radial-gradient(97.19% 175.43% at 17.05% 11.24%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px);}
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(35px); border-radius: 20px;}
 div.design_inner > div > div.design_page_inner > h2{margin-bottom: 30px; color:#333; font-size:48px; font-weight: 500; text-align: left;}
 div.design_inner > div > div.design_page_inner > ul > li{margin-bottom: 10px; font-size:24px; font-weight: 400; text-align: left;}
 div.design_inner > div > div.design_page_inner > ul > li:last-child{margin-top:30px; font-size:24px; font-weight: 400; text-align: left;}
@@ -938,7 +938,7 @@ div.design_inner > div >img{float: left;  width:50%;   height: 100%; }
 #container > div > section.web_app{height: 1200px;}
 section.web_app > h3{margin:50px auto; color:#066FFD; font-size:80px; font-weight: 500; text-align: center;}
 /*웹앱 타이틀이벤트*/
-#container > div > section.web_app > h3{letter-spacing:100px; transition:letter-spacing 3s ease-in-out;}
+#container > div > section.web_app > h3{letter-spacing:100px; transition:letter-spacing 2s ease-in-out;}
 #container > div.on > section.web_app>h3{letter-spacing:1px;}
 
 section.web_app > div{display: flex; flex-wrap:wrap; height:700px; margin-top: 50px;
