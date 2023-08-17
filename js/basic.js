@@ -9,10 +9,10 @@ gnbBtn.addEventListener("click",(e)=>{
 });
 
 //content4,5,6 웹유효성,접근성 팝업버튼 
-const testOpenBtn = document.querySelectorAll(".web_app_btn_open")
-const testCloseBtn = document.querySelectorAll(".web_app_btn_close")
-const testViewOpen = document.querySelectorAll(".web_app_btn_open_test")
-const testMoveBtn = document.querySelectorAll(".web_app_btn_01")
+const testOpenBtn = document.querySelectorAll(".webApp_Btn_test")
+const testCloseBtn = document.querySelectorAll(".webApp_Btn_test_close")
+const testViewOpen = document.querySelectorAll(".webApp_Btn_test_open")
+const testMoveBtn = document.querySelectorAll(".webApp_Btn_link")
 
 
 /*오픈하는경우(오픈되어있지않음)*/ 
@@ -42,7 +42,7 @@ let start = setTimeout(()=>{
 }, 500);
 
 //써클 이벤트들 
-let circle = document.querySelectorAll("#circle_wrap > div");
+let circle = document.querySelectorAll(".circle_inner > div");
 //창문
 window.addEventListener('scroll',()=>{
   for (let c = 0; c < contents.length; c++) {
@@ -50,6 +50,7 @@ window.addEventListener('scroll',()=>{
     if (c === 0 && contents[c] && contents[c].classList.contains("on")) {
       circle.forEach(frame => frame.classList.add("on"));
       circle.forEach(frame => frame.classList.remove("con1"));
+      circle.forEach(frame => frame.classList.remove("con2"));
       circle.forEach(frame => frame.classList.remove("end"));
     }
     // if (c === 1 && contents[c] && contents[c].classList.contains("on"))
@@ -60,6 +61,27 @@ window.addEventListener('scroll',()=>{
       circle.forEach(frame => frame.classList.remove("end"));
     }
     if (c === 2 && contents[c] && contents[c].classList.contains("on")){
+      circle.forEach(frame => frame.classList.add("on"));
+      circle.forEach(frame => frame.classList.add("con1"));
+      circle.forEach(frame => frame.classList.remove("con2"));
+      circle.forEach(frame => frame.classList.remove("end"));
+      
+    }
+    if (c === 4 && contents[c] && contents[c].classList.contains("on")){
+      circle.forEach(frame => frame.classList.add("on"));
+      circle.forEach(frame => frame.classList.remove("con1"));
+      circle.forEach(frame => frame.classList.add("con2"));
+      circle.forEach(frame => frame.classList.remove("end"));
+      
+    }
+    if (c === 5 && contents[c] && contents[c].classList.contains("on")){
+      circle.forEach(frame => frame.classList.add("on"));
+      circle.forEach(frame => frame.classList.remove("con1"));
+      circle.forEach(frame => frame.classList.add("con2"));
+      circle.forEach(frame => frame.classList.remove("end"));
+      
+    }
+    if (c === 6 && contents[c] && contents[c].classList.contains("on")){
       circle.forEach(frame => frame.classList.add("on"));
       circle.forEach(frame => frame.classList.remove("con1"));
       circle.forEach(frame => frame.classList.add("con2"));
